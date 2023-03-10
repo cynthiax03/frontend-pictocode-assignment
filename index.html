@@ -1,0 +1,298 @@
+<html>
+    <head>
+        <title>Task3: Credit Cards</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            h1 {
+                padding: 15px;
+                font-size: 48px;
+                line-height: 60px;
+                font-weight: bold;
+                max-width: 1118px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .container {
+                margin: 100px auto 14px;
+                min-width: 300px;
+                max-width: 1120px;
+                min-height: 980px;
+                flex-wrap: wrap;
+                flex-direction: row;
+                display: flex;
+                align-content: center;
+            }
+
+            .icon_container {
+                display: flex;
+                height: 489px;
+                width: 300px;
+                min-width: 371px;
+                flex: auto;
+                background-size: cover;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .icon_container:hover {
+                opacity: 0.5;
+            }
+
+            .icons {
+                display: flex;
+                max-height: 150px;
+                min-height: 150px;
+                flex: 1;
+                background-size: cover;
+                margin: 7% 22% 70px;
+            }
+
+            .top_icons {
+                max-width: 200px;
+                margin: 19px 70px;
+            }
+
+            .bottom_icons {
+                max-width: 150px;
+                margin: 19px 110px;
+            }
+
+            .icon_large_text {
+                font-size: 26px;
+                font-weight: bold;
+                margin-top: 55px;
+            }
+
+            .icon_small_text {
+                font-size: 19.5px;
+                margin-top: 15px;
+                line-height: 32px;
+            }
+
+            .yellow_container {
+                background-color: #FFFF6F;
+                max-width: 1120px;
+                height: 210px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .yellow_text_box {
+                display: flex;
+                max-width: 690px;
+                flex: auto;
+            }
+
+            .app_store_box {
+                display: flex;
+                min-width: 195px;
+                min-height: 60px;
+                margin: 109px 0 0;
+                flex: auto;
+            }
+
+            .google_play{
+                margin: 114px 0 0;
+            }
+
+            h2 {
+                font-size: 48px;
+                text-align: left;
+                line-height: 30px;
+                margin: 34px 35px;
+            }
+
+            .join_now_text {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                margin-top: 18px;
+            }
+
+            .offer_available_text {
+                font-size: 20px;
+                font-weight: normal;
+                margin-top: 5px; 
+            }
+
+            .UNSW_ROX {
+                background-color: #8E42FF;
+                width: 135px;
+                height: 34px;
+                color: white;
+                display: inline-block;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            .UNSW_ROX:hover {
+                opacity: 0.7;
+            }
+
+            @media only screen and (min-width: 800px) and (max-width: 1135px) {
+                h1 {
+                    text-align: center;
+                    font-size: 48px;
+                }
+
+                .icons {
+                    margin: 7% 25% 70px;
+                }
+
+                .bottom_icons {
+                    margin: 7% 32% 70px;
+                }
+
+                .yellow_container {
+                    flex-direction: row;
+                    height: 260px;
+                    flex: 1;
+                }
+
+                .yellow_text_box {
+                    flex: 3;
+                }
+            }
+
+            @media only screen and (max-width: 799px) {
+                h1 {
+                    font-size: 34px;
+                    line-height: 40px;
+                    font-weight: bold;
+                    min-width: 380px;
+                    padding-top: 40px;
+                    padding-left: 20px;
+                    padding-right: 30px;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+                .container {
+                    margin: 30px auto;
+                    height: 2420px;
+                    min-width: 415px;
+                    max-width: 480px;
+                }
+
+                .icon_container {
+                    max-height: 370px;
+                    min-width: 415px;
+                }
+
+                .icons {
+                    margin: 7% 25.5% 30px;
+                }
+
+                .icon_large_text {
+                    margin-top: 46px;
+                }
+
+                .icon_small_text {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                
+                .bottom_icons {
+                    margin: 7% 34% 30px;
+                }
+
+                .bottom_icon_container {
+                    min-height: 400px;
+                }
+
+                .centre_icon {
+                    margin-top: 120px;
+                }
+
+                .centre_icon_container {
+                    min-height: 500px;
+                }
+
+                .yellow_container {
+                    max-width: 375px;
+                    height: 470px;
+                    margin-top: 95px;
+                    align-content: flex-start;
+                }
+
+                .yellow_text_box {
+                    height: 280px;
+                }
+
+                h2 {
+                    margin: 30px 35px;
+                    text-align: center;
+                    line-height: 32px;
+                }
+
+                .join_now_text {
+                    margin-top: 16px;
+                }
+
+                .app_store_box {
+                    margin: 14px 90px 6px;
+                    width: 375px;
+                    height: 100px;
+                    gap: 0;
+                }
+            }
+            
+        </style>
+    </head>
+    <body style="background: #F8F8F8; font-family: Arial, Helvetica, sans-serif; color: #000037">
+        <div>
+            <h1>We're here to help you get more credit cards to buy more things</h1>
+            <div class="container">
+                <div class="icon_container">
+                    <div class="icons top_icons" style="background: url(assets/q5_icon1.svg) no-repeat; background-size: cover"></div>
+                    <div class="icon_large_text">No fee cards</div>
+                    <div class="icon_small_text">Say bye bye to card payment fees</div>
+                </div>
+                <div class="icon_container">
+                    <div class="icons top_icons" style="background: url(assets/q5_icon2.svg) no-repeat; background-size: cover"></div>
+                    <div class="icon_large_text">Pay however</div>
+                    <div class="icon_small_text">Pay with google pay or apple pay</div>
+                </div>
+                <div class="icon_container">
+                    <div class="icons top_icons" style="background: url(assets/q5_icon3.svg) no-repeat; background-size: cover"></div>
+                    <div class="icon_large_text">10/10 interest rates</div>
+                    <div class="icon_small_text">Nothing is more exciting given the economic climate</div>
+                </div>
+                <div class="icon_container bottom_icon_container centre_icon_container">
+                    <div class="icons bottom_icons centre_icon" style="background: url(assets/q5_icon4.svg) no-repeat; background-size: cover;"></div>
+                    <div class="icon_large_text">Easy to use app</div>
+                    <div class="icon_small_text">All the financial information you need in one place</div>
+                </div>
+                <div class="icon_container bottom_icon_container">
+                    <div class="icons bottom_icons" style="background: url(assets/q5_icon5.svg) no-repeat; background-size: cover;"></div>
+                    <div class="icon_large_text">Built in calendar</div>
+                    <div class="icon_small_text">Built in calendar will help you track your payments</div>
+                </div>
+                <div class="icon_container bottom_icon_container">
+                    <div class="icons bottom_icons" style="background: url(assets/q5_icon6.svg) no-repeat; background-size: cover;"></div>
+                    <div class="icon_large_text">AU call centres</div>
+                    <div class="icon_small_text">Not that it makes a difference as you won't call anyway</div>
+                </div>
+            </div>
+            <div class="yellow_container">
+                <div class="yellow_text_box">
+                    <h2>Get started now!  🙌
+                        <div class="join_now_text">Join now using our invite code 
+                            <div class="UNSW_ROX">UNSWROX</div>
+                            and 
+                            <div class="join_now_text" style="font-weight: bold; display: inline;">get $1.10</div> 
+                            after your second purchase.
+                        </div>
+                        <div class="offer_available_text">Offer available for a limited time.</div>
+                    </h2> 
+                </div>
+                <div class="app_store_box" style="background: url(assets/app-store.png) no-repeat; background-size: contain;"></div>
+                <div class="app_store_box google_play" style="background: url(assets/google-play.png) no-repeat; background-size: contain;"></div>
+            </div>
+        </div>
+    </body>
+</html>
